@@ -5,7 +5,7 @@
         <div class="top-timer">
           <span>Timer</span>
           <button class="top-map-button">
-            <img src="@/components/Badge/Small/Vector.png" alt="">
+            <img src="@/components/assets/Badge/Small/Vector.png" alt="">
           </button>
         </div>
         <div class="middle-timer">
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Timer from '@/components/Timer'
+import Timer from '~/components/timerComponents/Timer'
 export default {
   name: 'BodyTimer',
   components: {

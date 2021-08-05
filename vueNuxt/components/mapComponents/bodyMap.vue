@@ -4,7 +4,7 @@
       <div class="main-info">
         <div class="top-map">
           <span>Basic map</span>
-          <button class="top-map-button"><img src="@/components/Badge/Small/Vector.png" alt=""></button>
+          <button class="top-map-button"><img src="@/components/assets/Badge/Small/Vector.png" alt=""></button>
         </div>
         <div>
           <div class="map" id="map">
@@ -18,7 +18,7 @@
 
 <script>
 
-import googleMap from '@/components/googleMap'
+import googleMap from '~/components/mapComponents/googleMap'
 export default {
   components: { googleMap },
   mounted () {

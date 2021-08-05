@@ -26,9 +26,9 @@
 
 <script>
 
-import Todohead from '@/components/Todohead'
-import Todolist from '@/components/Todolist'
-import AddTodotask from '@/components/addTodotask'
+import Todohead from '~/components/todoComponents/Todohead'
+import Todolist from '~/components/todoComponents/Todolist'
+import AddTodotask from '~/components/todoComponents/addTodotask'
 export default {
   name: 'TodoMain',
   components: {

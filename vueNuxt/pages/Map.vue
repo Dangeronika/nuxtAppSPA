@@ -1,17 +1,14 @@
 <template>
   <div>
-    <SPAHead />
     <bodyMap class="body" />
   </div>
 </template>
 
 <script>
-import SPAHead from '@/components/SPAHead'
-import bodyMap from '@/components/bodyMap'
+import bodyMap from '@/components/mapComponents/bodyMap'
 export default {
   name: 'Map',
   components: {
-    SPAHead,
     bodyMap
   }
 }

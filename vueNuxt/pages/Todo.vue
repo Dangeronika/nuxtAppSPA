@@ -1,17 +1,14 @@
 <template>
   <div>
-    <SPAHead />
     <TodoMain />
   </div>
 </template>
 
 <script>
-import SPAHead from '@/components/SPAHead'
-import TodoMain from '~/components/TodoMain'
+import TodoMain from '@/components/todoComponents/TodoMain'
 export default {
   name: 'Todolist',
   components: {
-    SPAHead,
     TodoMain
   }
 }

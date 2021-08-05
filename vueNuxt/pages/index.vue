@@ -1,17 +1,13 @@
 <template>
   <div>
-    <SPAHead/>
-    <Activity/>
+    <Activity />
   </div>
 </template>
 
 <script>
-import SPAHead from '@/components/SPAHead'
 import Activity from '@/components/bodyActivity'
 export default {
-  name: 'index',
   components: {
-    SPAHead,
     Activity
   }
 }

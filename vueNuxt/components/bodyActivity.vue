@@ -10,15 +10,15 @@
               </div>
               <div class="info-post-top-right">
                 <span class="info-post-top-right-text">49 minutes ago</span>
-                <img src="@/components/Badge/Small/Vector.png" alt="">
+                <img src="@/components/assets/Badge/Small/Vector.png" alt="">
               </div>
 
             </div>
             <div class="info-post-middle">
-              <img src="@/components/Badge/Small/image 2022.png" alt="" class="info-post-middle-image">
+              <img src="@/components/assets/Badge/Small/image 2022.png" alt="" class="info-post-middle-image">
             </div>
             <div class="who-commented">
-              <img src="@/components/Badge/Small/Union.png" alt="" class="who-commented-image">
+              <img src="@/components/assets/Badge/Small/Union.png" alt="" class="who-commented-image">
               <span><a href="" style="text-decoration: none; color: #2375e1;">Kirill Dashkevich</a> commented:</span>
             </div>
             <div class="comment">
@@ -34,42 +34,42 @@
             </div>
             <div class="info-post-bottom">
               <div class="info-post-bottom-left">
-                <img src="@/components/Badge/Small/Eye.png" alt="" class="info-post-bottom-left">
+                <img src="@/components/assets/Badge/Small/Eye.png" alt="" class="info-post-bottom-left">
                 <span class="info-post-bottom-left viewers">438</span>
-                <img src="@/components/Badge/Small/Union.png" alt="" class="info-post-bottom-left">
+                <img src="@/components/assets/Badge/Small/Union.png" alt="" class="info-post-bottom-left">
                 <span class="info-post-bottom-left">71</span>
               </div>
               <div class="info-post-bottom-right">
                 <span class="post-bottom-right-text">Read post</span>
-                <img src="@/components/Badge/Small/Right vector.png" alt="" class="info-post-bottom-right">
+                <img src="@/components/assets/Badge/Small/Right vector.png" alt="" class="info-post-bottom-right">
               </div>
             </div>
           </div>
           <div class="conservation">
             <span>Conservation with James</span>
-            <img src="@/components/Header/Tabs/Small/Vectordown.png" alt="">
+            <img src="@/components/assets/Header/Tabs/Small/Vectordown.png" alt="">
           </div>
         </div>
         <div class="right-bar">
           <div class="profile">
-            <img src="@/components/Badge/Small/Intersect.png" alt="" class="profile-photo">
+            <img src="@/components/assets/Badge/Small/Intersect.png" alt="" class="profile-photo">
             <span class="profile-name">Harold Pain</span>
             <span class="profile-specialization">UX/UI designer</span>
-            <img src="@/components/Badge/Small/Frame 674.png" alt="" class="profile-banner">
+            <img src="@/components/assets/Badge/Small/Frame 674.png" alt="" class="profile-banner">
           </div>
           <div class="navigation">
             <div class="nav-head">
               <span style="font-size: 16px;">Navigation</span>
-              <button class="nav-head-button"><img src="@/components/Header/Tabs/Small/Vectordown.png" alt=""></button>
+              <button class="nav-head-button"><img src="@/components/assets/Header/Tabs/Small/Vectordown.png" alt=""></button>
             </div>
             <div class="nav-body">
               <div class="nav-body-item nav-1">
-                <img src="@/components/Header/Icon button/Small/Chevron/People.png" alt=""  class="nav-image">
+                <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt=""  class="nav-image">
                 <span class="nav-text">My profile</span>
               </div>
               <div class="nav-body-item nav-2">
                 <div class="nav-2-left">
-                  <img src="@/components/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
+                  <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
                   <span class="nav-text">Balance</span>
                 </div>
                 <div class="nav-2-right">
@@ -78,7 +78,7 @@
               </div>
               <div class="nav-body-item nav-3">
                 <div class="nav-3-left">
-                  <img src="@/components/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
+                  <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
                   <span class="nav-text">Connections</span>
                 </div>
                 <div class="nav-3-right">
@@ -86,14 +86,14 @@
                 </div>
               </div>
               <div class="nav-body-item nav-4">
-                <img src="@/components/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
+                <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
                 <span class="nav-text">Friends</span>
               </div>
             </div>
             <div class="nav-tail">
               <div class="nav-body-item nav-3">
                 <div class="nav-5-left">
-                  <img src="@/components/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
+                  <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
                   <span class="nav-text">Connections</span>
                 </div>
                 <div class="nav-5-right">
@@ -101,7 +101,7 @@
                 </div>
               </div>
               <div class="nav-body-item nav-6">
-                <img src="@/components/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
+                <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="nav-image">
                 <span class="nav-text">Account settings</span>
               </div>
             </div>
@@ -109,7 +109,7 @@
           <div class="navigation share">
             <div class="nav-head">
               <span style="font-size: 16px;">Share your thoughts</span>
-              <button class="nav-head-button"><img src="@/components/Header/Tabs/Small/Vectordown.png" alt=""></button>
+              <button class="nav-head-button"><img src="@/components/assets/Header/Tabs/Small/Vectordown.png" alt=""></button>
             </div>
             <div class="share-message-area">
               <textarea

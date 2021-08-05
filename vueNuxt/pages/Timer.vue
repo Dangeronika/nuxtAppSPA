@@ -1,17 +1,14 @@
 <template>
   <div>
-    <SPAHead />
     <bodyTimer />
   </div>
 </template>
 
 <script>
-import SPAHead from '@/components/SPAHead'
-import bodyTimer from '@/components/bodyTimer'
+import bodyTimer from '@/components/timerComponents/bodyTimer'
 export default {
   name: 'Timer',
   components: {
-    SPAHead,
     bodyTimer
 
   }

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Todotask from '@/components/Todotask'
+import Todotask from '~/components/todoComponents/Todotask'
 export default {
   components: {
     Todotask
