@@ -17,7 +17,7 @@
           :class="{usable: !task.rename}"
           @click=" hider(), changeDescription()"
         >
-          <img src="@/components/assets/accepted.png" class="img" alt="">
+          <img src="@/assets/accepted.png" class="img" alt="">
         </button>
 
         <button
@@ -25,7 +25,7 @@
           :class="{usable: task.rename}"
           @click="hider()"
         >
-          <img src="@/components/assets/pencil-pen.png" class="img" alt="">
+          <img src="@/assets/pencil-pen.png" class="img" alt="">
         </button>
 
         <button

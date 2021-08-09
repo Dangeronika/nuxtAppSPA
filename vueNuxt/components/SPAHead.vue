@@ -4,7 +4,7 @@
       <div class="top-line">
         <div class="top top-left-element">
           <button class="top-button-left">
-            <img src="@/components/assets/Header/Icon button/Small/Chevron/Vector 18 (Stroke).png" alt="Vector">
+            <img src="@/assets/Header/Icon button/Small/Chevron/Vector 18 (Stroke).png" alt="Vector">
           </button>
           <span class="top-text-left">User Pages</span>
         </div>
@@ -13,56 +13,57 @@
             <img src="" alt="">
           </button>
           <button class="top-button-right">
-            <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt="People">
+            <img src="@/assets/Header/Icon button/Small/Chevron/People.png" alt="People">
           </button>
         </div>
       </div>
-
       <div class="bottom-line">
         <div id="headernav" class="bottom bottom-left-element">
-          <div class="bottom-left-element animationdiv" :class="{isActive: index_selected}" @click="changeStyle()">
-            <NuxtLink id="href" class="index_href" to="/" :class="{isActiveText: index_href_selected}">
-              <img src="@/components/assets/Header/Tabs/Small/Subtract.png" alt="" class="bot-lft-el">
-              <span class="bot-lft-el">Activity</span>
+          <div class="bottom-left-element animationdiv" :class="{isActive: index_selected}">
+            <NuxtLink id="href" class="index_href"  exact-active-class="active" to="/" :class="{isActiveText: index_href_selected}">
+              <div>
+                <img src="@/assets/Header/Tabs/Small/Subtract.png" alt="" class="bot-lft-el">
+                <span class="bot-lft-el">Activity</span>
+              </div>
             </NuxtLink>
           </div>
-          <div class="bottom-left-element animationdiv" :class="{isActive: map_selected}" @click="changeStyle()">
+          <div class="bottom-left-element animationdiv" :class="{isActive: map_selected}">
             <NuxtLink id="href" to="Map" class="Map_href" :class="{isActiveText: map_href_selected}">
-              <img src="@/components/assets/Header/Tabs/Small/Vector.png" alt="" class="bot-lft-el">
+              <img src="@/assets/Header/Tabs/Small/Vector.png" alt="" class="bot-lft-el">
               <span class="bot-lft-el">Map</span>
             </NuxtLink>
           </div>
-          <div class="bottom-left-element animationdiv" :class="{isActive: timer_selected}" @click="changeStyle()">
+          <div class="bottom-left-element animationdiv" :class="{isActive: timer_selected}">
             <NuxtLink id="href" to="Timer" class="Timer_href" :class="{isActiveText: timer_href_selected}">
-              <img src="@/components/assets/Header/Tabs/Small/Union.png" alt="" class="bot-lft-el">
+              <img src="@/assets/Header/Tabs/Small/Union.png" alt="" class="bot-lft-el">
               <span class="bot-lft-el">Time</span>
             </NuxtLink>
           </div>
-          <div class="bottom-left-element animationdiv" :class="{isActive: todo_selected}" @click="changeStyle()">
+          <div class="bottom-left-element animationdiv" :class="{isActive: todo_selected}">
             <NuxtLink id="href" class="index_href" to="Todo" :class="{isActiveText: todo_href_selected}">
-              <img src="@/components/assets/Header/Tabs/Small/Subtract.png" alt="" class="bot-lft-el">
+              <img src="@/assets/Header/Tabs/Small/Subtract.png" alt="" class="bot-lft-el">
               <span class="bot-lft-el">Quests</span>
             </NuxtLink>
           </div>
         </div>
         <div class="bottom bottom-right-element">
           <div class="bottom-right-element">
-            <img src="@/components/assets/Header/Tabs/Small/Rectangle 34.png" alt="" class="bottom-right-element">
+            <img src="@/assets/Header/Tabs/Small/Rectangle 34.png" alt="" class="bottom-right-element">
             <span class="bottom-right-element">Notes</span>
           </div>
           <div class="bottom-right-element">
-            <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="bottom-right-element">
+            <img src="@/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="bottom-right-element">
             <span class="bottom-right-element">Friends</span>
           </div>
           <div class="bottom-right-element">
-            <img src="@/components/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="bottom-right-element">
+            <img src="@/assets/Header/Icon button/Small/Chevron/People.png" alt="" class="bottom-right-element">
             <span class="bottom-right-element">Photos</span>
           </div>
           <div class="bottom-right-element">
             <button class="bottom-button-right">
-              <img src="@/components/assets/Header/Tabs/Small/Union.png" alt="" class="bottom-right-element">
+              <img src="@/assets/Header/Tabs/Small/Union.png" alt="" class="bottom-right-element">
             </button>
-            <img src="@/components/assets/Header/Tabs/Small/Vectordown.png" alt="">
+            <img src="@/assets/Header/Tabs/Small/Vectordown.png" alt="">
           </div>
         </div>
       </div>
@@ -86,42 +87,7 @@ export default {
     }
   },
   mounted () {
-    this.changeStyle()
     this.$store.dispatch('startTicks')
-  },
-  methods: {
-    changeStyle () {
-      // eslint-disable-next-line
-      let pageName = document.location.pathname
-      this.index_selected = false
-      this.map_selected = false
-      this.timer_selected = false
-      this.todo_selected = false
-      this.index_href_selected = false
-      this.map_href_selected = false
-      this.timer_href_selected = false
-      this.todo_href_selected = false
-
-      if (pageName === '/') {
-        this.index_selected = !this.index_selected
-        this.index_href_selected = !this.index_href_selected
-      }
-
-      if (pageName.includes('Map')) {
-        this.map_selected = !this.map_selected
-        this.map_href_selected = !this.map_href_selected
-      }
-
-      if (pageName.includes('Timer')) {
-        this.timer_selected = !this.timer_selected
-        this.timer_href_selected = !this.timer_href_selected
-      }
-
-      if (pageName.includes('Todo')) {
-        this.todo_selected = !this.todo_selected
-        this.todo_href_selected = !this.todo_href_selected
-      }
-    }
   }
 }
 </script>
@@ -233,13 +199,12 @@ a {
   border-bottom: 3px solid #2375e1;
 }
 
-.isActive {
-  border-bottom: 3px solid #2375e1;
+a.nuxt-link-exact-active {
   color: #2375e1;
 }
 
-.isActiveText {
-  padding-top: 3px;
+.active div span {
   color: #2375e1;
 }
+
 </style>

@@ -5,7 +5,7 @@
         <div class="top-timer">
           <span>Timer</span>
           <button class="top-map-button">
-            <img src="@/components/assets/Badge/Small/Vector.png" alt="">
+            <img src="@/assets/Badge/Small/Vector.png" alt="">
           </button>
         </div>
         <div class="middle-timer">
