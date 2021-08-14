@@ -8,7 +8,6 @@
 h1 {
   padding: 30px;
   border: 3px solid #dde0e6;
-  box-shadow: 0 6px 10px -8px rgba(0, 0, 0, 0.2);
-  background-color: white;
+  box-shadow: 0 8px 10px 8px rgba(0, 0, 0, 0.2);
 }
 </style>

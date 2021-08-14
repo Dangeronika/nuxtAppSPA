@@ -2,7 +2,11 @@
   <div :class="{viewed: task.checked}">
     <li :class="{completed: task.completed}">
       <span :class="{checked: task.completed}">
-        <input type="checkbox" :checked="task.checkbox_clicked" @change="completer(), $emit('chbxchange', index)">
+        <input
+          type="checkbox"
+          :checked="task.checkbox_clicked"
+          @change="completer(), $emit('chbxchange', task.id, !task.checkbox_clicked)"
+        >
         <strong>{{ index+1 }}</strong>
         {{ task.title }}
       </span>
@@ -15,17 +19,17 @@
         <button
           class="rename-but"
           :class="{usable: !task.rename}"
-          @click=" hider(), changeDescription()"
+          @click=" hider(index), $emit('rename-task', renameDescription, task.id)"
         >
-          <img src="@/assets/accepted.png" class="img" alt="">
+          <img src="~@/assets/accepted.png" class="img" alt="">
         </button>
 
         <button
           class="rename-but"
           :class="{usable: task.rename}"
-          @click="hider()"
+          @click="hider(index)"
         >
-          <img src="@/assets/pencil-pen.png" class="img" alt="">
+          <img src="~@/assets/pencil-pen.png" class="img" alt="">
         </button>
 
         <button
@@ -42,8 +46,7 @@
 <script>
 export default {
   props: {
-
-    task: Object,
+    task: {},
     index: Number
   },
   data () {
@@ -53,15 +56,12 @@ export default {
   },
   methods: {
 
-    hider () {
-      this.$emit('hidding-task', this.index)
+    hider (index) {
+      this.$emit('changeRename', index)
     },
     completer () {
-      this.$emit('completeTask', this.index)
-    },
-    changeDescription () {
-      this.$emit('changeDescription', this.renameDescription, this.index)
-      this.renameDescription = ''
+      // eslint-disable-next-line vue/no-mutating-props
+      this.task.completed = !this.task.completed
     }
   }
 }
@@ -69,14 +69,13 @@ export default {
 
 <style scoped>
 li {
+  border: 3px solid #dde0e6;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
   margin: 15px;
   padding: 3px;
-  border: 3px solid #dde0e6;
-  box-shadow: 0 6px 10px -8px rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 
@@ -118,5 +117,4 @@ input {
 .viewed {
   visibility: hidden;
 }
-
 </style>

@@ -8,17 +8,15 @@
         :index="index"
         @remove-todo="remove"
         @rename-task="rename"
-        @hidding-task="hide"
-        @completeTask="complete"
-        @chbxchange="savecondition"
-        @changeDescription="changeDescription"
+        @changeRename="changeRename"
+        @chbxchange="saveCondition"
       />
     </ul>
   </div>
 </template>
 
 <script>
-import Todotask from '~/components/todoComponents/Todotask'
+import Todotask from '@/components/todoComponents/Todotask'
 export default {
   components: {
     Todotask
@@ -31,17 +29,11 @@ export default {
     rename (description, id) {
       this.$emit('rename', description, id)
     },
-    savecondition (id) {
-      this.$emit('savecondition', id)
+    saveCondition (id, taskState) {
+      this.$emit('saveCondition', id, taskState)
     },
-    hide (id) {
-      this.$emit('hide', id)
-    },
-    complete (id) {
-      this.$emit('completeTask', id)
-    },
-    changeDescription (title, id) {
-      this.$emit('changeDescription', title, id)
+    changeRename (id) {
+      this.$emit('changeRenameCondition', id)
     }
   }
 

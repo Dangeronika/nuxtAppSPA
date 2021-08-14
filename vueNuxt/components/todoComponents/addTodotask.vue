@@ -1,21 +1,12 @@
 <template>
   <div>
     <form class="manyways" @submit.prevent="onSubmit">
-      <input
-        v-model="taskName"
-        type="text"
-        placeholder="Description..."
-      >
+      <input v-model="taskName" type="text" placeholder="Enter a new task...">
       <button type="submit">
         Create
       </button>
     </form>
-    <input
-      :value="search"
-      placeholder="Enter a task for search..."
-      class="searchInput"
-      @input="$emit('inputChange', $event.target.value)"
-    >
+    <input class="searchInput" :value="search" placeholder="Enter a search task..." @input="$emit('inputChange', $event.target.value)">
   </div>
 </template>
 
@@ -32,7 +23,6 @@ export default {
   methods: {
     onSubmit () {
       const newTodo = {
-        id: Date.now(),
         title: this.taskName,
         completed: false,
         rename: false,
@@ -48,8 +38,11 @@ export default {
 <style>
 
 .manyways {
-  margin: 5px;
   display: flex;
   justify-content: center;
+}
+
+.searchInput {
+  margin-top: 5px;
 }
 </style>
