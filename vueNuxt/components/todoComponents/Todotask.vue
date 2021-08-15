@@ -4,8 +4,8 @@
       <span :class="{checked: task.completed}">
         <input
           type="checkbox"
-          :checked="task.checkbox_clicked"
-          @change="completer(), $emit('chbxchange', task.id, !task.checkbox_clicked)"
+          :checked="task.checkboxClicked"
+          @change="completer(), $emit('chbxchange', task.id, !task.checkboxClicked)"
         >
         <strong>{{ index+1 }}</strong>
         {{ task.title }}

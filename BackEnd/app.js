@@ -82,7 +82,7 @@ async function getTasks() {
 async function addTask(newTask) {
     let createdTask = await todoModel.create({
         title: newTask.title,
-        checkbox_clicked: newTask.checkbox_clicked,
+        checkboxClicked: newTask.checkboxClicked,
         completed: newTask.completed,
         rename: newTask.rename
     })
@@ -107,7 +107,7 @@ async function renameTask(id, text) {
 
 async function changeConditions(id, taskState){
     return  await todoModel.update({
-        checkbox_clicked: taskState,
+        checkboxClicked: taskState,
         completed: taskState
     }, {
         where: {

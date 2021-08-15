@@ -26,7 +26,7 @@ export default {
         title: this.taskName,
         completed: false,
         rename: false,
-        checkbox_clicked: false
+        checkboxClicked: false
       }
       this.$emit('add-todo', newTodo)
       this.taskName = ''

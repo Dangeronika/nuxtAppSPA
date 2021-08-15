@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   todoDB.init({
     title: DataTypes.STRING,
-    checkbox_clicked: DataTypes.BOOLEAN,
+    checkboxClicked: DataTypes.BOOLEAN,
     completed: DataTypes.BOOLEAN,
     rename: DataTypes.BOOLEAN
   }, {
