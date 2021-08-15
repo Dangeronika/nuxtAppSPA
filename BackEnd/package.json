@@ -1,6 +1,9 @@
 {
   "name": "BackEnd",
   "version": "1.0.0",
+  "scripts": {
+    "migrate": "npx sequelize-cli db:migrate"
+  },
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "@koa/router": "^10.1.0",

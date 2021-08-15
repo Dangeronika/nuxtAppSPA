@@ -35,11 +35,6 @@ try {
 } catch (error) {
     console.error('Unable to connect to the database:', error);
 }
-    // eslint-disable-next-line no-unexpected-multiline
-(async ()=>{
-    await todoModel.sync();//{ force: true }
-})();
-
 
 router.post('/tasks/addTask', async (ctx)=>{
     let newTask = ctx.request.body.newTodo

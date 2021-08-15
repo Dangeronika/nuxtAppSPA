@@ -8,7 +8,7 @@
         </div>
         <div>
           <div class="map" id="map">
-            <googleMap id="map"></googleMap>
+            <googleMap ></googleMap>
           </div>
         </div>
       </div>
