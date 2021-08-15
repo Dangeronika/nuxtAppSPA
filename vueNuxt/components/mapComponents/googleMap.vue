@@ -1,5 +1,5 @@
 <template>
-  <div id="map" />
+  <div class="map" />
 </template>
 
 <script>
@@ -19,7 +19,7 @@ export default {
       })
       loader.load().then(() => {
         // eslint-disable-next-line
-        const map = new google.maps.Map(document.getElementById('map'), {
+        const map = new google.maps.Map(document.getElementsByClassName('map'), {
           center: { lat: -34.397, lng: 150.644 },
           zoom: 8
         })

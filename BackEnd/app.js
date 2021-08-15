@@ -8,7 +8,14 @@ const router = new Router();
 const Sequelize = require("sequelize");
 let modelDB = require('./models/tododb')
 const {DataTypes} = require("sequelize");
-const sequelize = new Sequelize("todoListBase", "postgres", "5525", {
+
+require('dotenv').config({path: __dirname+'/.env'})
+let dbName = process.env.DB_NAME || 'todoListBase'
+let dbLogin = process.env.DB_LOGIN || 'postgres'
+let dbPass = process.env.DB_PASSWORD || '5525'
+let port = +process.env.PORT || 3001
+
+const sequelize = new Sequelize(dbName, dbLogin, dbPass, {
     dialect: "postgres",
     host: "localhost"
 });
@@ -64,7 +71,7 @@ router.put('/tasks/saveCondition/:id', async (ctx)=>{
     ctx.body = await changeConditions(ctx.params.id,ctx.request.body.taskState)
 })
 
-app.listen(3001, function(){
+app.listen(port, function(){
     console.log('Server running on https://localhost:3001')
 });
 
@@ -88,7 +95,7 @@ async function addTask(newTask) {
 }
 
 async function taskDestroy(id) {
-    await todoModel.destroy({
+    return  await todoModel.destroy({
         where: {
             id: id
         }
@@ -96,7 +103,7 @@ async function taskDestroy(id) {
 }
 
 async function renameTask(id, text) {
-    await todoModel.update({title: text}, {
+    return  await todoModel.update({title: text}, {
         where: {
             id: id
         }
@@ -104,7 +111,7 @@ async function renameTask(id, text) {
 }
 
 async function changeConditions(id, taskState){
-    await todoModel.update({
+    return  await todoModel.update({
         checkbox_clicked: taskState,
         completed: taskState
     }, {
