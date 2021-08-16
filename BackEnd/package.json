@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "migrate": "npx sequelize-cli db:migrate",
-    "start": "tsc && node app.js"
+    "start": "tsc && node build/app.js"
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",
