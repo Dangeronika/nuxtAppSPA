@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a888da6f-24ba-43b7-a8bd-13ff0bd2703c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BackEnd/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/.idea/.name" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/vueNuxt/pages/Todo.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vueNuxt/pages/Map.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vueNuxt/components/todoComponents/Todotask.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vueNuxt/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vueNuxt/components/mapComponents/googleMap.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../todoBackEnd/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vueNuxt/components/mapComponents/bodyMap.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vueNuxt/components/todoComponents/Todolist.vue" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1wV1pFtmP0vN4otbtD7PIuT9K5p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/BackEnd/build/app.ts&#10;K:/Repositories/nuxtApp/BackEnd/build/app.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BackEnd/build/app.js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="K:\Repositories\nuxtApp\vueNuxt\node_modules\stylelint" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="K:\Repositories\nuxtApp\BackEnd\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\Repositories\nuxtApp\vueNuxt" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="20210815150045-changeColumnName.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="BackEnd/migrations/20210815150045-changeColumnName.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="BackEnd/build/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="Node.js.20210815150045-changeColumnName.js" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a888da6f-24ba-43b7-a8bd-13ff0bd2703c" name="Changes" comment="" />
+      <created>1628529126006</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628529126006</updated>
+      <workItem from="1628529127557" duration="3565000" />
+      <workItem from="1628945425941" duration="4801000" />
+      <workItem from="1628951264519" duration="1623000" />
+      <workItem from="1629016971879" duration="4803000" />
+      <workItem from="1629029621855" duration="12707000" />
+      <workItem from="1629130349236" duration="6175000" />
+      <workItem from="1629139136276" duration="39000" />
+      <workItem from="1629203105410" duration="5133000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="__filename" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

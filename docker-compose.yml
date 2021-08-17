@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  backend:
+    build: BackEnd/
+    command: npm run start
+    ports:
+      - 3001:3001
+
+  frontend:
+    build: vueNuxt/
+    command: npm run dev
+    ports:
+      - 3000:3000
+    network_mode: host
+    depends_on:
+      - backend
