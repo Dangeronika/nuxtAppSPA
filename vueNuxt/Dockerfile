@@ -1,11 +1,14 @@
-FROM node:12
+FROM node:16-alpine
 
-WORKDIR /usr/src/frontApp
+ENV APP_ROOT /web/front
+
+WORKDIR ${APP_ROOT}
 
 COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY . ${APP_ROOT}
 
-CMD [ "npm", "run", "dev" ]
+EXPOSE 3000
+CMD npm run dev

@@ -1,7 +1,8 @@
-FROM node:12
+FROM node:16-alpine
 
+ENV APP_ROOT /web/backend
 # создание директории приложения
-WORKDIR /usr/src/app
+WORKDIR ${APP_ROOT}
 
 # установка зависимостей
 # символ астериск ("*") используется для того чтобы по возможности
@@ -13,8 +14,8 @@ RUN npm install
 # RUN npm ci --only=production
 
 # копируем исходный код
-COPY . .
+COPY . ${APP_ROOT}
 
 # информируем Докер о порте нашего серва
 EXPOSE 3001
-CMD [ "npm", "run", "start" ]
+CMD  npm run migrate && npm run seeds && npm run start

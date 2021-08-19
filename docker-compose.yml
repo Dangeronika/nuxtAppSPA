@@ -2,17 +2,30 @@ version: "3"
 
 services:
 
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 5525
+      POSTGRES_USER: postgres
+      POSTGRES_DB: "todoListBase"
+    ports:
+      - 5432:5432
+
   backend:
     build: BackEnd/
-    command: npm run start
+    restart: always
     ports:
       - 3001:3001
+    environment:
+      HOSTNAME: db
+    depends_on:
+      - db
+    links:
+      - db
 
   frontend:
     build: vueNuxt/
-    command: npm run dev
+    restart: always
     ports:
       - 3000:3000
-    network_mode: host
-    depends_on:
-      - backend

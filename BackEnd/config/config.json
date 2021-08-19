@@ -3,21 +3,21 @@
     "username": "postgres",
     "password": "5525",
     "database": "todoListBase",
-    "host": "127.0.0.1",
+    "host": "db",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "5525",
     "database": "todoListBase",
-    "host": "127.0.0.1",
+    "host": "db",
     "dialect": "postgres"
   },
   "production": {
     "username": "postgres",
     "password": "5525",
     "database": "todoListBase",
-    "host": "127.0.0.1",
+    "host": "db",
     "dialect": "postgres"
   }
 }

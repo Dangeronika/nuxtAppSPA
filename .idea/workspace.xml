@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a888da6f-24ba-43b7-a8bd-13ff0bd2703c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BackEnd/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/seeders/20210814122518-demo-user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +83,28 @@
       <workItem from="1629130349236" duration="6175000" />
       <workItem from="1629139136276" duration="39000" />
       <workItem from="1629203105410" duration="5133000" />
+      <workItem from="1629213506826" duration="894000" />
+      <workItem from="1629287520100" duration="6076000" />
+      <workItem from="1629301238348" duration="5130000" />
+      <workItem from="1629367634577" duration="314000" />
+      <workItem from="1629380920104" duration="6947000" />
+      <workItem from="1629394485477" duration="4856000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
