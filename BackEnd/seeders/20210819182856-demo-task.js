@@ -3,18 +3,16 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
 
-    await queryInterface.bulkInsert('todoDBs', [{
+    await queryInterface.bulkInsert('todos', [{
       title: 'Test seed?',
       checkboxClicked: false,
       completed: false,
-      rename: false,
-      createdAt: new Date(),
-      updatedAt: new Date()
+      rename: false
     }], {});
   },
 
   down: async (queryInterface, Sequelize) => {
 
-    await queryInterface.bulkDelete('todoDBs', null, {});
+    await queryInterface.bulkDelete('todos', null, {});
   }
 };

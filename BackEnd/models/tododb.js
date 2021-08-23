@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     rename: DataTypes.BOOLEAN
   }, {
     sequelize,
-    modelName: 'todoDB',
+    modelName: 'todos',
   });
   return todoDB;
 };
